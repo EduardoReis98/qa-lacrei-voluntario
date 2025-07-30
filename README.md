@@ -17,4 +17,4 @@ Este projeto é parte de uma entrega de 5 dias. O foco inicial está na document
 ---
 
 Eduardo Reis  
-[LinkedIn](https://linkedin.com/in/eduardoreisdev)
+[LinkedIn](https://www.linkedin.com/in/eduardo-reis-rodrigues-a6135018b/)
