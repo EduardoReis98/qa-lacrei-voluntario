@@ -37,17 +37,18 @@ Funcionalidade: Cadastro de Pessoa Usuária
     Mas não recebo o e-mail em minha caixa de entrada ou spam
     Então devo ter acesso fácil a uma opção de contato com o suporte
     E a interface deve informar alternativas claras para resolver o problema
+```
+---
 
-
-💻 Como visualizar os testes
+## 💻 Como visualizar os testes
 
 https://github.com/EduardoReis98/qa-lacrei-voluntario
 Use uma extensão do VS Code como Cucumber (Gherkin) Full Support para melhor visualização dos testes.
 
-📸 Evidências
+## 📸 Evidências
 Veja em prints as capturas de tela dos problemas encontrados, como o bug de quebra de layout mobile.
 
-🧠 Autor
+## 🧠 Autor
 Eduardo Reis
 Voluntário QA | Projeto Lacrei Saúde
 📧 eduardo.reis1509@gmail.com
