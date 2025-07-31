@@ -1,5 +1,5 @@
 # language: pt
-Funcionalidade: Cadastro de novo usuário
+Funcionalidade: Cadastro de novo usuário na versão mobile
 
   Como uma pessoa usuária
   Quero me cadastrar com meus dados pessoais
@@ -8,12 +8,14 @@ Funcionalidade: Cadastro de novo usuário
   Contexto:
     Dado que estou na página de cadastro
 
-  Cenário: Realização de cadastro com sucesso, apesar de dificuldades visuais
-    Quando visualizo o formulário na versão mobile
-    Então o layout deve se ajustar corretamente ao tamanho da tela
-    E os campos e botões devem ser acessíveis e legíveis
+  Cenário: Layout da versão mobile desconfigurado
+    Quando acesso a página no tamanho de tela 375x667
+    Então o layout deve ser responsivo
+    E os textos não devem ficar sobrepostos
+    E os campos e botões devem ser acessíveis para toque
 
-    Quando preencho os seguintes campos corretamente:
+  Cenário: Cadastro preenchido corretamente, mas sem recebimento do e-mail de verificação
+    Quando preencho todos os campos obrigatórios com dados válidos:
       | Campo             | Valor                           |
       | Nome social       | Eduardo                         |
       | Sobrenome         | Reis Rodrigues                  |
@@ -21,19 +23,16 @@ Funcionalidade: Cadastro de novo usuário
       | Confirmar Email   | eduardo.reis1509@gmail.com      |
       | Senha             | Batata42*                       |
       | Confirmar Senha   | Batata42*                       |
-
     E aceito os termos de uso
     E confirmo que tenho 18 anos ou mais
-    E clico no botão de "Cadastrar"
+    E clico no botão "Cadastrar"
+    Então devo ver a mensagem "Estamos quase lá ..."
+    E uma mensagem informando que um link foi enviado por e-mail
 
-    Então devo visualizar a mensagem "Estamos quase lá ..."
-    E uma mensagem indicando que receberei um link de confirmação por e-mail
-
-  Cenário: Não recebimento do e-mail de verificação mesmo após reenviar
-  Dado que completei meu cadastro com sucesso
-  E visualizei a mensagem "Estamos quase lá ..."
-  Quando clico na opção de reenviar o e-mail de verificação
-  Então o sistema deve exibir uma confirmação de que o e-mail foi reenviado
-  Mas não recebo o e-mail em minha caixa de entrada ou spam
-  Então devo ter acesso fácil a uma opção de contato com o suporte
-  E a interface deve informar alternativas claras para resolver o problema
+  Cenário: Reenvio do e-mail de verificação falha
+    Dado que finalizei o cadastro e vejo a mensagem "Estamos quase lá ..."
+    Quando clico na opção "Reenviar e-mail de verificação"
+    Então o sistema deve exibir a confirmação de reenvio
+    Mas o e-mail não é recebido (inclusive na caixa de spam)
+    Então devo ver uma opção visível de contato com o suporte
+    E mensagens claras indicando alternativas para continuar
