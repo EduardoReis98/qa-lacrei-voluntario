@@ -1,0 +1,25 @@
+{
+  "name": "qa-lacrei-voluntario",
+  "version": "1.0.0",
+  "description": "Este repositório contém testes funcionais manuais elaborados para avaliar a usabilidade, acessibilidade e confiabilidade do fluxo de **cadastro de pessoa usuária** na plataforma [Lacrei Saúde](https://paciente-staging.lacreisaude.com.br/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduardoReis98/qa-lacrei-voluntario.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/EduardoReis98/qa-lacrei-voluntario/issues"
+  },
+  "homepage": "https://github.com/EduardoReis98/qa-lacrei-voluntario#readme",
+  "devDependencies": {
+    "chance": "^1.1.13",
+    "cypress": "^14.5.3"
+  }
+}

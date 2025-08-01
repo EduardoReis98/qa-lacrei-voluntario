@@ -157,7 +157,7 @@ Apesar da estabilidade, o tempo máximo de resposta (1171 ms) pode ser um ponto 
 
 ---
 
-## 🧪 Testes de Acessibilidade – Tela de Cadastro
+## 🧪 Testes de Acessibilidade – Página de Cadastro
 
 ### 🦯 1. Teste com NVDA (Windows)
 
