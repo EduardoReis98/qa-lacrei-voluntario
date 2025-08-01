@@ -254,6 +254,51 @@ O site não fornece feedback textual ou auditivo para ações inválidas.
 
 ---
 
+## 🧪 Testes de Responsividade
+
+### 📱 Versão Mobile (até 600px)
+
+Problemas encontrados:
+
+❌ Componentes como caixas de texto e campos de preenchimento estão sobrepostos
+
+❌ Botões pequenos para toque (difícil interação em telas pequenas)
+
+❌ Elementos desalinhados visualmente
+
+✅ Scroll apenas vertical (sem scroll horizontal)
+
+Usabilidade:
+
+⚠️ Com muita dificuldade, é possível acessar os botões e preencher os formulários
+
+✅ Todas as interações funcionam (formulário, botões, navegação)
+
+### 💻 Versão Desktop (>1024px)
+
+✅ Todos os elementos estão alinhados corretamente
+
+✅ Botões e campos funcionam conforme esperado
+
+✅ Layout e usabilidade apropriados
+
+✅ Nenhum erro visual ou funcional identificado
+
+---
+
+## 🐞 **Bugs Encontrados e Melhorias Sugeridas**
+
+| ID | Descrição                                                  | Impacto | Sugestão                                                        |
+|----|-------------------------------------------------------------|---------|------------------------------------------------------------------|
+| 1  | Campo de senha não explica critérios                        | Médio   | Incluir descrição ARIA (`aria-describedby`) ou texto visível     |
+| 2  | Mensagens de erro não são lidas pelo NVDA                   | Alto    | Adicionar `aria-live="assertive"` ou `role="alert"`              |
+| 3  | Formulário não mostra erro visual ao falhar                 | Alto    | Exibir mensagens de erro visuais ao lado dos campos              |
+| 4  | Reenvio de e-mail falha silenciosamente                     | Alto    | Mostrar mensagem com tempo estimado ou opção de suporte          |
+| 5  | Layout mobile quebrado (sobreposição, botões pequenos)      | Médio   | Ajustar o CSS com media queries e melhor dimensionamento         |
+| 6  | Tempo de carregamento e bloqueio elevado na performance     | Médio   | Aplicar lazy loading e otimizar scripts JavaScript               |
+
+---
+
 ## 🧠 Autor
 
 Eduardo Reis
